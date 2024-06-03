@@ -1,0 +1,27 @@
+@charset "UTF-8"
+@use 'variables'
+
+@media screen and (min-width: 768px)
+  body
+    background: linear-gradient(to bottom, variables.$lilas, variables.$verde)
+
+    p
+      text-align: center
+
+  #login
+    width: 90vw
+    height: 45rem
+
+    display: flex
+
+    #imagem
+      flex: 1 1 150px
+      height: 100%
+
+    #formulario
+      flex: 2 1 0
+      padding: 4rem
+
+      form
+        input
+          padding-block: 1rem

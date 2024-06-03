@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page - CursoEmVideo</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/style.css">
+
+  <script src="https://kit.fontawesome.com/82786e3ab0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main>
+    <section id="login">
+      <div id="imagem">
+      </div>
+
+      <div id="formulario">
+        <h1>Login</h1>
+        <p>Seja bem-vindo novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+
+        <form action="login.php" method="POST" autocomplete="on">
+          <div class="campo">
+            <label for="name">Name</label>
+            <div class="input-image">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" name="name" id="name" autocomplete="name" required minlength="3" maxlength="30">
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="psw">Password</label>
+            <div class="input-image">
+              <label for="psw">
+                <i class="fa-solid fa-lock"></i>
+              </label>
+              <input type="password" name="password" id="psw" autocomplete="current-password" required minlength="8" maxlength="20">
+              <img src="/assets/eye-closed.svg" alt="Eye closed" id="eye">
+            </div>
+          </div>
+
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Esqueci minha senha">
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="/js/index.js"></script>
+</body>
+
+</html>
